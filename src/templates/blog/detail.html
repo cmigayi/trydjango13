@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+	Article
+{% endblock %}
+{% block content %}
+	<h2>{{ article.title }}</h2>
+	<p>{{ article.desc }}</p>
+	<p>{{ article.price }}</p>
+	<p>
+		<a href="../edit/{{ article.id }}/">Edit article</a>
+		|
+		<a href="../delete/{{ article.id }}/">Delete article</a>
+	</p>
+{% endblock %}
