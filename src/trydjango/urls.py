@@ -19,6 +19,7 @@ from django.urls import path, include
 from pages.views import home_view
 
 urlpatterns = [
+    path('courses/', include("courses.urls")),
     path('blog/', include("blog.urls")),
 	path('products/', include("products.urls")),
 	path('home/', home_view, name='home'),
